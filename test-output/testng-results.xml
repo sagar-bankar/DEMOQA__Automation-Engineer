@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-24T13:49:55 IST" name="Suite" finished-at="2025-08-24T13:54:43 IST" duration-ms="287642">
+    <groups>
+    </groups>
+    <test started-at="2025-08-24T13:49:55 IST" name="edgeTest" finished-at="2025-08-24T13:54:12 IST" duration-ms="256764">
+      <class name="com.cctech.challenge.tests.TC003_Submit_form_with_all_fields_empty">
+        <test-method is-config="true" signature="driverLaunch(java.lang.String,java.lang.String)[pri:0, instance:com.cctech.challenge.tests.TC003_Submit_form_with_all_fields_empty@3c46e67a]" started-at="2025-08-24T13:52:03 IST" name="driverLaunch" finished-at="2025-08-24T13:52:22 IST" duration-ms="19034" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverLaunch -->
+        <test-method signature="Submit_form_with_valid_data()[pri:0, instance:com.cctech.challenge.tests.TC003_Submit_form_with_all_fields_empty@3c46e67a]" started-at="2025-08-24T13:52:22 IST" name="Submit_form_with_valid_data" finished-at="2025-08-24T13:52:27 IST" duration-ms="4842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Submit_form_with_valid_data -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cctech.challenge.tests.TC003_Submit_form_with_all_fields_empty@3c46e67a]" started-at="2025-08-24T13:52:28 IST" name="tearDown" finished-at="2025-08-24T13:52:28 IST" duration-ms="881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cctech.challenge.tests.TC003_Submit_form_with_all_fields_empty -->
+      <class name="com.cctech.challenge.tests.TC005_Submit_form_with_invalid_mobile_number_less_than_10_digits">
+        <test-method is-config="true" signature="driverLaunch(java.lang.String,java.lang.String)[pri:0, instance:com.cctech.challenge.tests.TC005_Submit_form_with_invalid_mobile_number_less_than_10_digits@206a70ef]" started-at="2025-08-24T13:53:16 IST" name="driverLaunch" finished-at="2025-08-24T13:53:58 IST" duration-ms="42071" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverLaunch -->
+        <test-method signature="Submit_form_with_valid_data()[pri:0, instance:com.cctech.challenge.tests.TC005_Submit_form_with_invalid_mobile_number_less_than_10_digits@206a70ef]" started-at="2025-08-24T13:53:58 IST" name="Submit_form_with_valid_data" finished-at="2025-08-24T13:54:09 IST" duration-ms="11045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Submit_form_with_valid_data -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cctech.challenge.tests.TC005_Submit_form_with_invalid_mobile_number_less_than_10_digits@206a70ef]" started-at="2025-08-24T13:54:09 IST" name="tearDown" finished-at="2025-08-24T13:54:12 IST" duration-ms="2720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cctech.challenge.tests.TC005_Submit_form_with_invalid_mobile_number_less_than_10_digits -->
+      <class name="com.cctech.challenge.tests.TC004_Submit_form_with_invalid_email_format">
+        <test-method is-config="true" signature="driverLaunch(java.lang.String,java.lang.String)[pri:0, instance:com.cctech.challenge.tests.TC004_Submit_form_with_invalid_email_format@c730b35]" started-at="2025-08-24T13:52:28 IST" name="driverLaunch" finished-at="2025-08-24T13:53:03 IST" duration-ms="34924" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverLaunch -->
+        <test-method signature="Submit_form_with_valid_data()[pri:0, instance:com.cctech.challenge.tests.TC004_Submit_form_with_invalid_email_format@c730b35]" started-at="2025-08-24T13:53:03 IST" name="Submit_form_with_valid_data" finished-at="2025-08-24T13:53:13 IST" duration-ms="9751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Submit_form_with_valid_data -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cctech.challenge.tests.TC004_Submit_form_with_invalid_email_format@c730b35]" started-at="2025-08-24T13:53:13 IST" name="tearDown" finished-at="2025-08-24T13:53:16 IST" duration-ms="2557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cctech.challenge.tests.TC004_Submit_form_with_invalid_email_format -->
+      <class name="com.cctech.challenge.tests.TC002_Submit_form_with_multiple_subjects_and_hobbies">
+        <test-method is-config="true" signature="driverLaunch(java.lang.String,java.lang.String)[pri:0, instance:com.cctech.challenge.tests.TC002_Submit_form_with_multiple_subjects_and_hobbies@6c6cb480]" started-at="2025-08-24T13:51:21 IST" name="driverLaunch" finished-at="2025-08-24T13:51:37 IST" duration-ms="15857" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverLaunch -->
+        <test-method signature="Submit_form_with_valid_data()[pri:0, instance:com.cctech.challenge.tests.TC002_Submit_form_with_multiple_subjects_and_hobbies@6c6cb480]" started-at="2025-08-24T13:51:37 IST" name="Submit_form_with_valid_data" finished-at="2025-08-24T13:52:00 IST" duration-ms="23043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Submit_form_with_valid_data -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cctech.challenge.tests.TC002_Submit_form_with_multiple_subjects_and_hobbies@6c6cb480]" started-at="2025-08-24T13:52:00 IST" name="tearDown" finished-at="2025-08-24T13:52:03 IST" duration-ms="3053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cctech.challenge.tests.TC002_Submit_form_with_multiple_subjects_and_hobbies -->
+      <class name="com.cctech.challenge.tests.TC001_Submit_form_with_valid_data">
+        <test-method is-config="true" signature="driverLaunch(java.lang.String,java.lang.String)[pri:0, instance:com.cctech.challenge.tests.TC001_Submit_form_with_valid_data@408d971b]" started-at="2025-08-24T13:49:56 IST" name="driverLaunch" finished-at="2025-08-24T13:50:55 IST" duration-ms="58846" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverLaunch -->
+        <test-method signature="Submit_form_with_valid_data()[pri:0, instance:com.cctech.challenge.tests.TC001_Submit_form_with_valid_data@408d971b]" started-at="2025-08-24T13:50:55 IST" name="Submit_form_with_valid_data" finished-at="2025-08-24T13:51:16 IST" duration-ms="20684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Submit_form_with_valid_data -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cctech.challenge.tests.TC001_Submit_form_with_valid_data@408d971b]" started-at="2025-08-24T13:51:16 IST" name="tearDown" finished-at="2025-08-24T13:51:21 IST" duration-ms="4789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cctech.challenge.tests.TC001_Submit_form_with_valid_data -->
+    </test> <!-- edgeTest -->
+    <test started-at="2025-08-24T13:49:55 IST" name="chromeTest" finished-at="2025-08-24T13:54:43 IST" duration-ms="287642">
+      <class name="com.cctech.challenge.tests.TC005_Submit_form_with_invalid_mobile_number_less_than_10_digits">
+        <test-method is-config="true" signature="driverLaunch(java.lang.String,java.lang.String)[pri:0, instance:com.cctech.challenge.tests.TC005_Submit_form_with_invalid_mobile_number_less_than_10_digits@7cc0cdad]" started-at="2025-08-24T13:53:09 IST" name="driverLaunch" finished-at="2025-08-24T13:54:25 IST" duration-ms="76112" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverLaunch -->
+        <test-method signature="Submit_form_with_valid_data()[pri:0, instance:com.cctech.challenge.tests.TC005_Submit_form_with_invalid_mobile_number_less_than_10_digits@7cc0cdad]" started-at="2025-08-24T13:54:25 IST" name="Submit_form_with_valid_data" finished-at="2025-08-24T13:54:42 IST" duration-ms="16427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Submit_form_with_valid_data -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cctech.challenge.tests.TC005_Submit_form_with_invalid_mobile_number_less_than_10_digits@7cc0cdad]" started-at="2025-08-24T13:54:42 IST" name="tearDown" finished-at="2025-08-24T13:54:43 IST" duration-ms="1187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cctech.challenge.tests.TC005_Submit_form_with_invalid_mobile_number_less_than_10_digits -->
+      <class name="com.cctech.challenge.tests.TC003_Submit_form_with_all_fields_empty">
+        <test-method is-config="true" signature="driverLaunch(java.lang.String,java.lang.String)[pri:0, instance:com.cctech.challenge.tests.TC003_Submit_form_with_all_fields_empty@459e9125]" started-at="2025-08-24T13:51:37 IST" name="driverLaunch" finished-at="2025-08-24T13:51:43 IST" duration-ms="5785" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverLaunch -->
+        <test-method signature="Submit_form_with_valid_data()[pri:0, instance:com.cctech.challenge.tests.TC003_Submit_form_with_all_fields_empty@459e9125]" started-at="2025-08-24T13:51:43 IST" name="Submit_form_with_valid_data" finished-at="2025-08-24T13:51:57 IST" duration-ms="13700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Submit_form_with_valid_data -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cctech.challenge.tests.TC003_Submit_form_with_all_fields_empty@459e9125]" started-at="2025-08-24T13:51:57 IST" name="tearDown" finished-at="2025-08-24T13:51:59 IST" duration-ms="2036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cctech.challenge.tests.TC003_Submit_form_with_all_fields_empty -->
+      <class name="com.cctech.challenge.tests.TC004_Submit_form_with_invalid_email_format">
+        <test-method is-config="true" signature="driverLaunch(java.lang.String,java.lang.String)[pri:0, instance:com.cctech.challenge.tests.TC004_Submit_form_with_invalid_email_format@128d2484]" started-at="2025-08-24T13:51:59 IST" name="driverLaunch" finished-at="2025-08-24T13:52:03 IST" duration-ms="4236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverLaunch -->
+        <test-method signature="Submit_form_with_valid_data()[pri:0, instance:com.cctech.challenge.tests.TC004_Submit_form_with_invalid_email_format@128d2484]" started-at="2025-08-24T13:52:03 IST" name="Submit_form_with_valid_data" finished-at="2025-08-24T13:53:01 IST" duration-ms="57720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Submit_form_with_valid_data -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cctech.challenge.tests.TC004_Submit_form_with_invalid_email_format@128d2484]" started-at="2025-08-24T13:53:02 IST" name="tearDown" finished-at="2025-08-24T13:53:09 IST" duration-ms="7416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cctech.challenge.tests.TC004_Submit_form_with_invalid_email_format -->
+      <class name="com.cctech.challenge.tests.TC002_Submit_form_with_multiple_subjects_and_hobbies">
+        <test-method is-config="true" signature="driverLaunch(java.lang.String,java.lang.String)[pri:0, instance:com.cctech.challenge.tests.TC002_Submit_form_with_multiple_subjects_and_hobbies@6f1de4c7]" started-at="2025-08-24T13:50:57 IST" name="driverLaunch" finished-at="2025-08-24T13:51:04 IST" duration-ms="7471" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverLaunch -->
+        <test-method signature="Submit_form_with_valid_data()[pri:0, instance:com.cctech.challenge.tests.TC002_Submit_form_with_multiple_subjects_and_hobbies@6f1de4c7]" started-at="2025-08-24T13:51:04 IST" name="Submit_form_with_valid_data" finished-at="2025-08-24T13:51:31 IST" duration-ms="26385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Submit_form_with_valid_data -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cctech.challenge.tests.TC002_Submit_form_with_multiple_subjects_and_hobbies@6f1de4c7]" started-at="2025-08-24T13:51:31 IST" name="tearDown" finished-at="2025-08-24T13:51:37 IST" duration-ms="6159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cctech.challenge.tests.TC002_Submit_form_with_multiple_subjects_and_hobbies -->
+      <class name="com.cctech.challenge.tests.TC001_Submit_form_with_valid_data">
+        <test-method is-config="true" signature="driverLaunch(java.lang.String,java.lang.String)[pri:0, instance:com.cctech.challenge.tests.TC001_Submit_form_with_valid_data@313ac989]" started-at="2025-08-24T13:49:56 IST" name="driverLaunch" finished-at="2025-08-24T13:50:44 IST" duration-ms="47415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverLaunch -->
+        <test-method signature="Submit_form_with_valid_data()[pri:0, instance:com.cctech.challenge.tests.TC001_Submit_form_with_valid_data@313ac989]" started-at="2025-08-24T13:50:44 IST" name="Submit_form_with_valid_data" finished-at="2025-08-24T13:50:54 IST" duration-ms="9759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Submit_form_with_valid_data -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cctech.challenge.tests.TC001_Submit_form_with_valid_data@313ac989]" started-at="2025-08-24T13:50:54 IST" name="tearDown" finished-at="2025-08-24T13:50:57 IST" duration-ms="2758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cctech.challenge.tests.TC001_Submit_form_with_valid_data -->
+    </test> <!-- chromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>

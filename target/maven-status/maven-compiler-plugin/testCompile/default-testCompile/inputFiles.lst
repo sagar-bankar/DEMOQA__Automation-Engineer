@@ -1,0 +1,8 @@
+C:\Workspaces\30-10-2024 On words\demoqa-automation\src\test\java\com\cctech\challenge\pages\PracticeFormPage.java
+C:\Workspaces\30-10-2024 On words\demoqa-automation\src\test\java\com\cctech\challenge\tests\BaseClass.java
+C:\Workspaces\30-10-2024 On words\demoqa-automation\src\test\java\com\cctech\challenge\tests\TC001_Submit_form_with_valid_data.java
+C:\Workspaces\30-10-2024 On words\demoqa-automation\src\test\java\com\cctech\challenge\tests\TC002_Submit_form_with_multiple_subjects_and_hobbies.java
+C:\Workspaces\30-10-2024 On words\demoqa-automation\src\test\java\com\cctech\challenge\tests\TC003_Submit_form_with_all_fields_empty.java
+C:\Workspaces\30-10-2024 On words\demoqa-automation\src\test\java\com\cctech\challenge\tests\TC004_Submit_form_with_invalid_email_format.java
+C:\Workspaces\30-10-2024 On words\demoqa-automation\src\test\java\com\cctech\challenge\tests\TC005_Submit_form_with_invalid_mobile_number_less_than_10_digits.java
+C:\Workspaces\30-10-2024 On words\demoqa-automation\src\test\java\com\cctech\challenge\utils\ExtentReportManager.java
