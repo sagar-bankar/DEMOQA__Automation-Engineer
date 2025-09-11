@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven3'   // Jenkins मध्ये आधी Maven tool configure करून नाव "Maven3" द्या
-        jdk 'JDK11'      // Jenkins मध्ये JDK configure करून नाव "JDK11" द्या
+        maven 'MyMaven'   // Jenkins मध्ये आधी Maven tool configure करून नाव "Maven3" द्या
+        jdk 'MyJava'      // Jenkins मध्ये JDK configure करून नाव "JDK11" द्या
     }
 
     environment {
