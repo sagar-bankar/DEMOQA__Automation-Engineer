@@ -30,10 +30,10 @@ pipeline {
 
         stage('Archive Reports') {
             steps {
-                // Publish JUnit results
+                // Publish JUnit results (this enables TEST_COUNTS vars)
                 junit 'target/surefire-reports/*.xml'
 
-                // Archive HTML reports (Extent / custom reports)
+                // Archive custom HTML reports (Extent report etc.)
                 archiveArtifacts artifacts: 'reports/*.html', fingerprint: true
             }
         }
@@ -54,10 +54,10 @@ pipeline {
                     Build/Tests FAILED ❌<br><br>
 
                     <b>Test Summary:</b><br>
-                    Total: ${currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction)?.totalCount} <br>
-                    Passed: ${currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction)?.passCount} <br>
-                    Failed: ${currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction)?.failCount} <br>
-                    Skipped: ${currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction)?.skipCount} <br><br>
+                    - Total Tests: \${TEST_COUNTS,total}<br>
+                    - Passed: \${TEST_COUNTS,passed}<br>
+                    - Failed: \${TEST_COUNTS,failed}<br>
+                    - Skipped: \${TEST_COUNTS,skipped}<br><br>
 
                     Please check Jenkins console logs.<br><br>
                     <b>Job:</b> ${env.JOB_NAME}<br>
@@ -77,10 +77,10 @@ pipeline {
                     All tests executed successfully ✅<br><br>
 
                     <b>Test Summary:</b><br>
-                    Total: ${currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction)?.totalCount} <br>
-                    Passed: ${currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction)?.passCount} <br>
-                    Failed: ${currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction)?.failCount} <br>
-                    Skipped: ${currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction)?.skipCount} <br><br>
+                    - Total Tests: \${TEST_COUNTS,total}<br>
+                    - Passed: \${TEST_COUNTS,passed}<br>
+                    - Failed: \${TEST_COUNTS,failed}<br>
+                    - Skipped: \${TEST_COUNTS,skipped}<br><br>
 
                     Please find the attached test report.<br><br>
                     <b>Job:</b> ${env.JOB_NAME}<br>
