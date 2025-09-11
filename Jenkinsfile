@@ -2,62 +2,49 @@ pipeline {
     agent any
 
     tools {
-        maven 'MyMaven'   // Jenkins मध्ये आधी Maven tool configure करून नाव "Maven3" द्या
-        jdk 'MyJava'      // Jenkins मध्ये JDK configure करून नाव "JDK11" द्या
-    }
-
-    environment {
-        // Report path, इथे बदल करू शकतोस
-        REPORT_DIR = "target/surefire-reports"
+        maven 'MyMaven'   // Define Maven tool from Jenkins global config
+        jdk 'MyJava'      // Define JDK from Jenkins global config
     }
 
     stages {
         stage('Checkout') {
             steps {
-                echo "Checking out code from GitHub..."
-                checkout scm
+                echo 'Checking out code from GitHub...'
+                git url: 'https://github.com/sagar-bankar/DEMOQA__Automation-Engineer.git', branch: 'master'
             }
         }
 
         stage('Build') {
             steps {
-                echo "Building the Maven project..."
-                sh "mvn clean install -DskipTests"
+                echo 'Building the Maven project...'
+                bat 'mvn clean install -DskipTests'
             }
         }
 
         stage('Run Tests') {
             steps {
-                echo "Running TestNG automation suite..."
-                sh "mvn test -DsuiteXmlFile=DEMOQASuite.xml"
+                echo 'Running Tests...'
+                bat 'mvn test'
             }
         }
 
         stage('Archive Reports') {
             steps {
-                echo "Archiving test reports..."
-                junit '**/target/surefire-reports/*.xml'
-                archiveArtifacts artifacts: '**/target/surefire-reports/*.*', fingerprint: true
-            }
-        }
-
-        stage('Post Results') {
-            steps {
-                echo "Post-build actions (email/Slack notification can be added here)..."
+                junit 'target/surefire-reports/*.xml'
             }
         }
     }
 
     post {
         always {
-            echo "Cleaning workspace..."
-            cleanWs()
-        }
-        success {
-            echo "Build & Test successful!"
+            echo 'Cleaning workspace...'
+            cleanWs()  // Needs Workspace Cleanup Plugin
         }
         failure {
-            echo "Build failed. Please check logs."
+            echo 'Build failed. Please check logs.'
+        }
+        success {
+            echo 'Build successful!'
         }
     }
 }
