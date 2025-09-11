@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'MyMaven'   // Define Maven tool from Jenkins global config
-        jdk 'MyJava'      // Define JDK from Jenkins global config
+        maven 'MyMaven'   // Jenkins मध्ये configure केलेलं Maven tool
+        jdk 'MyJava'      // Jenkins मध्ये configure केलेलं JDK
     }
 
     stages {
@@ -31,6 +31,7 @@ pipeline {
         stage('Archive Reports') {
             steps {
                 junit 'target/surefire-reports/*.xml'
+                archiveArtifacts artifacts: 'reports/*.html', fingerprint: true
             }
         }
     }
@@ -38,13 +39,37 @@ pipeline {
     post {
         always {
             echo 'Cleaning workspace...'
-            cleanWs()  // Needs Workspace Cleanup Plugin
+            cleanWs()
         }
         failure {
             echo 'Build failed. Please check logs.'
+            emailext (
+                to: 'qa-team@xyz.com',
+                subject: "❌ Build Failed - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                body: """
+                    Hello Team,<br><br>
+                    Build/Tests FAILED ❌<br>
+                    Please check Jenkins console logs.<br><br>
+                    Report attached.
+                """,
+                attachmentsPattern: 'reports/*.html'
+            )
         }
         success {
             echo 'Build successful!'
+            emailext (
+                to: 'qa-team@xyz.com',
+                subject: "✅ Build Success - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                body: """
+                    Hello Team,<br><br>
+                    All tests executed successfully ✅<br><br>
+                    Please find the attached test report.<br><br>
+                    <b>Jenkins Job:</b> ${env.JOB_NAME}<br>
+                    <b>Build Number:</b> #${env.BUILD_NUMBER}<br>
+                    <b>Build URL:</b> <a href="${env.BUILD_URL}">${env.BUILD_URL}</a>
+                """,
+                attachmentsPattern: 'reports/*.html'
+            )
         }
     }
 }
