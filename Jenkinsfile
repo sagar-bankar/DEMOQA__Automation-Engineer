@@ -44,7 +44,7 @@ pipeline {
         failure {
             echo 'Build failed. Please check logs.'
             emailext (
-                to: 'qa-team@xyz.com',
+                to: 'sagar.bankar590@gmail.com',
                 subject: "❌ Build Failed - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: """
                     Hello Team,<br><br>
@@ -58,7 +58,7 @@ pipeline {
         success {
             echo 'Build successful!'
             emailext (
-                to: 'qa-team@xyz.com',
+                to: 'sagar.bankar590@gmail.com',
                 subject: "✅ Build Success - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: """
                     Hello Team,<br><br>
