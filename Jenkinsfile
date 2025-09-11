@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'MyMaven'   // Jenkins मध्ये configure केलेलं Maven tool
-        jdk 'MyJava'      // Jenkins मध्ये configure केलेलं JDK
+        maven 'MyMaven'   // Maven tool configured in Jenkins
+        jdk 'MyJava'      // JDK configured in Jenkins
     }
 
     stages {
@@ -30,7 +30,10 @@ pipeline {
 
         stage('Archive Reports') {
             steps {
+                // Publish JUnit results
                 junit 'target/surefire-reports/*.xml'
+
+                // Archive HTML reports (Extent / custom reports)
                 archiveArtifacts artifacts: 'reports/*.html', fingerprint: true
             }
         }
@@ -48,9 +51,18 @@ pipeline {
                 subject: "❌ Build Failed - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: """
                     Hello Team,<br><br>
-                    Build/Tests FAILED ❌<br>
+                    Build/Tests FAILED ❌<br><br>
+
+                    <b>Test Summary:</b><br>
+                    Total: ${currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction)?.totalCount} <br>
+                    Passed: ${currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction)?.passCount} <br>
+                    Failed: ${currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction)?.failCount} <br>
+                    Skipped: ${currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction)?.skipCount} <br><br>
+
                     Please check Jenkins console logs.<br><br>
-                    Report attached.
+                    <b>Job:</b> ${env.JOB_NAME}<br>
+                    <b>Build Number:</b> #${env.BUILD_NUMBER}<br>
+                    <b>Build URL:</b> <a href="${env.BUILD_URL}">${env.BUILD_URL}</a>
                 """,
                 attachmentsPattern: 'reports/*.html'
             )
@@ -63,8 +75,15 @@ pipeline {
                 body: """
                     Hello Team,<br><br>
                     All tests executed successfully ✅<br><br>
+
+                    <b>Test Summary:</b><br>
+                    Total: ${currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction)?.totalCount} <br>
+                    Passed: ${currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction)?.passCount} <br>
+                    Failed: ${currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction)?.failCount} <br>
+                    Skipped: ${currentBuild.rawBuild.getAction(hudson.tasks.junit.TestResultAction)?.skipCount} <br><br>
+
                     Please find the attached test report.<br><br>
-                    <b>Jenkins Job:</b> ${env.JOB_NAME}<br>
+                    <b>Job:</b> ${env.JOB_NAME}<br>
                     <b>Build Number:</b> #${env.BUILD_NUMBER}<br>
                     <b>Build URL:</b> <a href="${env.BUILD_URL}">${env.BUILD_URL}</a>
                 """,
