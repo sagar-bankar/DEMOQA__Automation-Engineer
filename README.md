@@ -21,7 +21,8 @@ The project showcases **end-to-end UI automation**, **framework design**, **repo
 - ✅ Automatic screenshot capture on failures  
 - ✅ Detailed HTML test reports  
 - ✅ Centralized configuration handling  
-- ✅ Logging for execution traceability  
+- ✅ Logging for execution traceability
+- ✅ Git and Github for code storing purpose 
 - ✅ Jenkins CI/CD ready  
 
 ---
@@ -58,6 +59,7 @@ DEMOQA_Automation-Engineer
 - **Jenkinsfile** → CI/CD pipeline
 
 <img width="485" height="524" alt="image" src="https://github.com/user-attachments/assets/5e9fddd2-0128-41c0-b2f4-b2488e329075" />
+<img width="628" height="577" alt="image" src="https://github.com/user-attachments/assets/095f5cb2-c313-46c9-b043-264ceea1e89a" />
 
 
 
@@ -121,14 +123,13 @@ Easy for recruiters to review and understand
 
 ---
 👨‍💻 Author <br>
-Sagar Bankar <br>
+ Sagar Bankar <br>
 Software Test Engineer <br>
-🔹 Manual & Automation Testing
-🔹 Selenium | Java | TestNG | Maven | Jenkins
 
+---
 🔗 GitHub Profile:
 https://github.com/Sagar-bankar <br>
-🔗 Visit github page for real Result [click live Page Result](https://sagar-bankar.github.io/DEMOQA_TDD_Project_Github_Page/)
+🔗 Visit github page for real Result -->>> [click live Page Result](https://sagar-bankar.github.io/DEMOQA_TDD_Project_Github_Page/)
 
 ⭐ If you find this project helpful, please consider giving it a star!
 
