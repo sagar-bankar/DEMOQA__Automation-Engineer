@@ -133,3 +133,12 @@ https://github.com/Sagar-bankar <br>
 
 ⭐ If you find this project helpful, please consider giving it a star!
 
+
+```bash
+----------------------------------------------------------------------------------------------------------------------------------------------------
+© 2025 Sagar Bankar. All rights reserved.
+
+This project is shared for educational and portfolio purposes.
+Reproduction, commercial use, or redistribution without explicit
+permission from the author is not allowed.
+
