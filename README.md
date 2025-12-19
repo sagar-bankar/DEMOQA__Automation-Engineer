@@ -73,7 +73,7 @@ DEMOQA_Automation-Engineer
 - Regression-ready test suites  
 
 ---
-
+```
 ## ▶️ How to Run the Project
 
 ### 🔹 Step 1: Clone the Repository
@@ -120,7 +120,7 @@ Follows corporate QA standards
 Ideal for Automation Testing interviews
 
 Easy for recruiters to review and understand
-
+```
 ---
 👨‍💻 Author <br>
  Sagar Bankar <br>
